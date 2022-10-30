@@ -367,7 +367,7 @@ def search_hotspot():
         check_for_labels()
         Thread(target=get_general_hs_data).start()
 
-search_img = ImageTk.PhotoImage(Image.open("searchicon.png").resize((20, 20), Image.ANTIALIAS))
+search_img = ImageTk.PhotoImage(Image.open("C:\\Users\\Danie\\Desktop\\janky-explorer\\janky-explorer-backend\\searchicon.png").resize((20, 20), Image.ANTIALIAS))
 
 search_button = CTk.CTkButton(master=frame, width=80, height=35, image=search_img, text="", command=search_hotspot, bg_color="#10182c", fg_color="#10182c")
 search_button.place(x=985, y=12.5)
